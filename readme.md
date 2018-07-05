@@ -1,7 +1,7 @@
 # Central Logger
 Central Logger is a tiny library for streaming the logs and info about the node application to the remote server. It is working using 'fire and forget' protocol.
 ## Install
-Available via <a href="http://example.com/" title="Title">npm</a>.
+Available via <a href="https://www.npmjs.com/" title="npm">npm</a>.
 ```
 npm install central-logger
 ````

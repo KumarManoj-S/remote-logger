@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Centralized logging. It is used to setup a server and a clients. Clients are able to send the logs to the server. Server will store the logs in different files based on its category.",
   "main": "index.js",
+  "keywords": ["logging", "remote-logging", "central-logging", "logger"],
   "repository": "https://github.com/KumarManoj-S/remote-logger.git",
   "author": "Manoj Kumar S<kumarmanoj1158@gmail.com>",
   "license": "MIT",

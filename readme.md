@@ -7,16 +7,16 @@ npm install central-logger
 ````
 ## Usage
 Set up your remote central server :
-```
+```js
 var Server = require('central-logger').Server;
 
 //create the server
 var server = new Server(
 	'127.0.0.1', 		//host
-    3500				//port
+    3500			//port
 );
 
-//set up the Transport location
+//set up the transport location
 server.addTransports('/var/log/mydirectory/');
 
 server.listen();
@@ -31,7 +31,7 @@ node server.js
 ```
 
 set up your client apps that sends the log or info to the remote server :
-```
+```js
 const Client = require('central-logger').Client;
 
 //category
@@ -45,17 +45,17 @@ var logger = new Client('127.0.0.1', 3500);
 
 Afterwards just log as usual:
 
-```
+```js
 logger.log("info", "foo", MODULE1);
 ```
 It will send the log to the central server. 
 The syntax for the log method is ,
-```
+```js
 log(level, message, category);
 ```
 
 and then on your remote server you can check the logged files,
-```
+```js
 cat /var/log/mydirectory/MODULE1.log
 
 {"level":"info","message":"foo","timestamp":"2018-07-05T10:36:41.357Z"}

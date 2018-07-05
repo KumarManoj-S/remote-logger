@@ -1,0 +1,14 @@
+{
+  "name": "remote-logger",
+  "version": "1.0.0",
+  "description": "Centralized logging. It is used to setup a server and a clients. Clients are able to send the logs to the server. Server will store the logs in different files based on its category.",
+  "main": "index.js",
+  "repository": "https://github.com/KumarManoj-S/remote-logger.git",
+  "author": "Manoj Kumar <kumarmanoj1158@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "mkdirp": "^0.5.1",
+    "udp": "^1.0.0"
+  }
+}

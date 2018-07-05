@@ -46,6 +46,7 @@ Afterwards just log as usual:
 
 ```js
 logger.log("info", "foo", MODULE1);
+logger.log("warn", "bar", MODULE2);
 ```
 It will send the log to the central server. 
 The syntax for the log method is ,
@@ -59,4 +60,4 @@ cat /var/log/mydirectory/MODULE1.log
 
 {"level":"info","message":"foo","timestamp":"2018-07-05T10:36:41.357Z"}
 ```
-If you don't mention any category while logging it will log them into the deafult file <code>'error.log'</code>
+If you don't mention any category while logging like <code>logger.log("info", "foo"); </code> it will log them into the deafult file <code>'error.log'</code>

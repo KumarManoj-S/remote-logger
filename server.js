@@ -55,7 +55,7 @@ Server.prototype.listen = function(){
 
     socket.on('listening', () => {
         const address = socket.address();
-        console.log(`server listening ${address.address}:${address.port}`);
+        console.log(`Listening on port ${address.port}`);
     });
 
     socket.bind({

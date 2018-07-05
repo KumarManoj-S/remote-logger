@@ -30,9 +30,10 @@ function makeLog(log){
     const level = log['level'];
     const message = log['message'];
     const timestamp = log['timestamp'];
-    return timestamp + " : " + JSON.stringify({
+    return JSON.stringify({
         "level" : level,
-        "error" : message
+        "error" : message,
+        "timestamp" : timestamp
     }) + "\n";
 }
 

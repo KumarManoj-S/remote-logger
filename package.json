@@ -1,6 +1,6 @@
 {
   "name": "central-logger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Centralized logging. It is used to setup a server and a clients. Clients are able to send the logs to the server. Server will store the logs in different files based on its category.",
   "main": "index.js",
   "keywords": [

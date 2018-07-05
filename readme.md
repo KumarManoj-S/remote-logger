@@ -21,7 +21,6 @@ server.addTransports('/var/log/mydirectory/');
 
 server.listen();
 
-})
 ```
 
 start the server,
